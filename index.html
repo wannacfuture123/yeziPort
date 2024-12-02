@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html class="sr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Yesiree Cano | Software Engineer</title>
+  <link href="./port_files/css" rel="stylesheet">
+  <link rel="stylesheet" href="./port_files/main.css" hreflang="en-us">
+  <style>
+    #lazyapplyEasyApplyButton {
+      background-color: #333;
+      color: #fff;
+      padding: 8px 15px;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-top: 5px;
+      margin: 5px 5px 5px 10px;
+      border-radius: 2.4rem;
+    }
+
+    #lazyapplyEasyApplyImage {
+      margin-right: 10px;
+      width: 30px;
+      filter: none !important;
+    }
+
+    #lazyapplySendEmailButton {
+      background-color: #2851a3;
+      color: white;
+      padding: 10px 20px;
+      font-size: 14px;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      height: fit-content;
+      outline: none;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    #lazyapplySendEmailButton:hover {
+      box-shadow: 0 0 15px rgba(0, 123, 255, 1), 0 0 20px rgba(0, 123, 255, 1);
+    }
+
+    /* #lazyapply-jobQ-Btn{
+    background-color: #2851A3;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    height: fit-content;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#lazyapply-jobQ-Btn:hover {
+    box-shadow: 0 0 15px rgba(0, 123, 255, 1), 0 0 20px rgba(0, 123, 255, 1);
+} */
+
+    #lazyapply-jobQ-Btn {
+      background-image: linear-gradient(to right,
+          #ff512f 0%,
+          #f09819 51%,
+          #ff512f 100%);
+      margin: 0px 10px 0px 10px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      max-width: 250px;
+      min-height: 40px;
+      font-weight: bold;
+      font-size: 1.1em;
+      cursor: pointer;
+    }
+
+    #lazyapply-jobQ-Btn span {
+      flex-grow: 1;
+      display: flex;
+      /* Use Flexbox for center alignment */
+      justify-content: center;
+      /* Center horizontally */
+      align-items: center;
+      /* Center vertically */
+      height: 100%;
+    }
+
+    #lazyapply-jobQ-Btn:hover {
+      background-position: right center;
+      /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .mySettingsIcon {
+      fill: white;
+      min-width: 10px;
+      /* min-height: 20px; */
+      max-width: 20px;
+      /* max-height: 25px; */
+    }
+
+    .mySettingsIcon-wrapper {
+      width: 10%;
+      height: 100%;
+      border-left: 2px solid rgba(230, 0, 0, 0.3);
+      min-width: 30px;
+      max-width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    #lazyapply-jobQ-Btn-Added {
+      background-image: linear-gradient(to right,
+          #56ab2f 0%,
+          #a8e063 51%,
+          #56ab2f 100%);
+      margin: 0px 10px 0px 10px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      max-width: 250px;
+      min-height: 40px;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    #lazyapply-jobQ-Btn-Added:hover {
+      background-position: right center;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    #lazyapply-referralQ-Btn {
+      background-image: linear-gradient(to right,
+          #ff512f 0%,
+          #f09819 51%,
+          #ff512f 100%);
+      margin: 0px 10px 0px 10px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      max-width: 150px;
+      min-height: 40px;
+      font-weight: bold;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    #lazyapply-referralQ-Btn-Added:hover {
+      background-position: right center;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    #lazyapply-referralQ-Btn-Added {
+      background-image: linear-gradient(to right,
+          #56ab2f 0%,
+          #a8e063 51%,
+          #56ab2f 100%);
+      margin: 0px 10px 0px 10px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      max-width: 130px;
+      min-height: 40px;
+      font-weight: bold;
+      font-size: 0.8em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body class="night" style="height: 100%;">
+  <div id="site">
+    <div class="switch-wrapper">
+      <div class="sun"></div>
+      <div class="toggle-wrapper"> <input id="switch" type="checkbox"> <label for="switch" id="toggle">Toggle</label>
+      </div>
+      <div class="moon"></div>
+    </div>
+    <header class="intro">
+      <h1 class="intro__hello">Hello! <span class="emoji wave-hand animated"></span> </h1>
+      <h2 class="intro__tagline">I'm <span class="name">Yesiree Cano</span>, senior software
+        engineer focused on building beautiful interfaces &amp; experiences <span class="emoji technologist"></span>
+      </h2>
+      <h3 class="intro__contact"> <span>Get in touch </span> <span class="emoji pointer"></span> <span> <a href="mailto:yesirocanoo@outlook.com" target="_blank" class="highlight-link">yesirocanoo@outlook.com</a>
+        </span> <br><div style="margin-top: 10px;"></div> Address: <span class="highlight-link">Stroitelnaya street, bld. 61, appt. 34, Ekibastuz, Kazakhstan (S13M8C0)</span>
+      
+        <br>PhoneNumber: <span class="highlight-link">+7 9510546256</span></h3>
+    </header>
+    <section class="section background" data-sr-id="0" style="visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1) 0s;">
+      <div class="section__title">Background</div>
+      <div class="section__content">
+        <p> I'm a passionate Full Stack web developer with experience developing Full Stack web applications with Python, Django, React.js, and Cloud Technologies. I am strongly interested in learning new technologies and implementing them in my projects. I'm a self-motivated and hardworking individual who is always ready to learn new things and work in a team.</p>
+      </div>
+    </section>
+    <section class="section skills" data-sr-id="2" style="visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1) 0s;">
+      <div class="section__title">Skills</div>
+      <div class="section__content">
+        <!-- <p>I’ve picked up quite a few skills during the course of my three co-ops, and aim to improve these skills everyday. Here are a few of the technologies that I have experience with:</p> -->
+        <div class="skillz">
+          <div class="skillz__category">
+            <div class="skillz__category__label">Languages</div>
+            <ul>
+              <li class="skillz__category__item">JavaScript (ES6)</li>
+              <li class="skillz__category__item">TypeScript</li>
+              <li class="skillz__category__item">HTML</li>
+              <li class="skillz__category__item">CSS/Sass</li>
+              <li class="skillz__category__item">Python</li>
+              <li class="skillz__category__item">SQL</li>
+              <li class="skillz__category__item">R</li>
+            </ul>
+          </div>
+          <div class="skillz__category">
+            <div class="skillz__category__label">Frameworks</div>
+            <ul>
+              <li class="skillz__category__item">Ember &amp; Glimmer</li>
+              <li class="skillz__category__item">React</li>
+              <li class="skillz__category__item">Jekyll</li>
+              <li class="skillz__category__item">Node</li>
+              <li class="skillz__category__item">D3</li>
+              <li class="skillz__category__item">Wordpress</li>
+              <li class="skillz__category__item">Timber</li>
+            </ul>
+          </div>
+          <div class="skillz__category">
+            <div class="skillz__category__label">Tools</div>
+            <ul>
+              <li class="skillz__category__item">Bash</li>
+              <li class="skillz__category__item">Git &amp; Github</li>
+              <li class="skillz__category__item">Gulp &amp; Grunt</li>
+              <li class="skillz__category__item">Chrome DevTools</li>
+              <li class="skillz__category__item">Postman</li>
+              <li class="skillz__category__item">MongoDB</li>
+            </ul>
+          </div>
+          <div class="skillz__category">
+            <div class="skillz__category__label">Design</div>
+            <ul>
+              <li class="skillz__category__item">Sketch</li>
+              <li class="skillz__category__item">InDesign</li>
+              <li class="skillz__category__item">InVision</li>
+              <li class="skillz__category__item">Prototyping</li>
+              <li class="skillz__category__item">Wireframing</li>
+              <li class="skillz__category__item">User Testing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section featured-projects" data-sr-id="4" style="visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1) 0s;">
+      <div class="section__title">Popular Projects</div>
+      <div class="section__content">
+        <div class="project screentime">
+          <figure class="project__pic phones"> <a href="https://play.google.com/store/apps/details?id=com.starry.management" target="_blank">
+              <div class="phone"> <img src="./port_files/screentime1.png" alt=""> </div>
+              <div class="phone"> <img src="./port_files/screentime3.png" alt=""> </div>
+              <div class="phone"> <img src="./port_files/screentime4.png" alt=""> </div>
+            </a> </figure>
+          <figcaption class="project__caption">
+            <div class="project__name"> <a href="https://play.google.com/store/apps/details?id=com.starry.management" target="_blank">ScreenTime 2.0</a> </div>
+            <p>Starry Station feature that provided users with the ability to easily filter content, pause the internet,
+              and even create custom rules for blocking apps like Facebook and Twitter right from their phones.</p>
+          </figcaption>
+        </div>
+        <div class="project interventions">
+          <figure class="project__pic"> <a href="https://interventions.design/" target="_blank"> <img src="./port_files/interventions.png" alt=""> </a> </figure>
+          <figcaption class="project__caption">
+            <div class="project__name"> <a href="https://interventions.design/" target="_blank">Interventions</a> </div>
+            <p>Interactive marketing website for Northeastern's first annual student-led design conference,
+              Interventions.</p>
+          </figcaption>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__copyright">
+        <div class="top"> <span>Designed &amp; Developed by</span> </div>
+        <div class="bottom"> <span>Yesiree Cano</span> <img class="emoji" src="./port_files/rockon.png" alt="emoji">
+          <span>2024</span> </div>
+      </div>
+      <button id="top-button" style="display: inline-block;"> <img src="./port_files/pointing-up.png" alt=""> </button>
+  </footer></div>
+  <script src="./port_files/jquery.min.js.download" type="text/javascript" charset="utf-8"></script>
+  <script src="./port_files/scrollreveal.min.js.download"></script>
+  <script src="./port_files/main.js.download" type="text/javascript" charset="utf-8"></script>
+
+
+</body></html>
